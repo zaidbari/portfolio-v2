@@ -1,0 +1,59 @@
+@import '../../styles/variables';
+
+.article {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vh;
+  height: 100vw;
+
+  .contentDiv {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: fit-content;
+    height: 170px;
+    color: $text-dark-secondary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3em;
+
+    & > div {
+      display: flex;
+    }
+
+    header {
+      font-size: 2.5rem;
+      color: $primary-color-darker;
+      font-weight: 600;
+    }
+
+    p,
+    a {
+      font-size: 1.8rem;
+    }
+
+    p {
+      margin: 0.5em 0;
+    }
+
+    a {
+      background: $secondary-dark;
+      color: $text-light-secondary;
+      padding: 0.5em 1em;
+      cursor: pointer;
+      margin-right: 1em;
+    }
+  }
+
+  img {
+    height: 600px;
+    width: 350px;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+}

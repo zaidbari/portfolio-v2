@@ -1,0 +1,27 @@
+@import '../../styles/functions';
+@import '../../styles/variables';
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    background: $secondary-dark;
+    transition: all 0.5s ease-in;
+    @include flexCenter(column);
+
+    &>div:first-child {
+        @include flexCenter(column);
+        transition: all 0.5s ease-in;
+    }
+
+    span {
+        font-size: 2.4rem;
+        font-weight: 600;
+        font-family: $secondary-sans;
+        color: $text-light-secondary;
+        letter-spacing: 1.3px;
+    }
+}
