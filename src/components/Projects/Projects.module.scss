@@ -1,25 +1,5 @@
 @import '../../styles/variables';
 
-.container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-
-  & > div:first-child {
-    flex: 1;
-    display: flex;
-    align-items: center;
-  }
-
-  h2 {
-    margin: 0;
-    color: $primary-color;
-    padding: 3rem;
-    z-index: 100;
-    width: fit-content;
-  }
-}
-
 .carousel {
   position: absolute;
   left: 10%;

@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+
+.head__light {
+	color: $text-light-secondary;
+	font-size: 70px;
+  font-family: $secondary-sans;
+	&:after {
+			content: '';
+			display: block;
+			margin: 10px 0;
+			width: 50px;
+			height: 4px;
+			background-color: $text-light-secondary;
+			
+	}
+}
+
+.head__dark {
+	color: $primary-color;
+  font-family: $secondary-sans;
+	font-size: 70px;
+	&:after {
+			content: '';
+			display: block;
+			margin: 10px 0;
+			width: 50px;
+			height: 4px;
+			background-color: $primary-color;
+			
+	}
+}

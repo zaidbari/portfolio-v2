@@ -1,17 +1,20 @@
-import Logo from '../Logo/Logo';
-import styles from './Hero.module.scss';
+import Container from '../Container'
+import Logo from '../Logo/Logo'
+import styles from './Hero.module.scss'
 
-export default function Hero() {
+export default function Hero () {
   return (
-    <div className={styles.container}>
-      <div>
-        <span>Hello</span>
-        <span>World!</span>
+    <Container>
+      <div className={ styles.hero }>
+
+        <div>
+          <span>Hello</span>
+          <span>World!</span>
+        </div>
+        <div>
+          <Logo />
+        </div>
       </div>
-      <div>
-        <Logo />
-        <span>Lafen Lesley portfolio.</span>
-      </div>
-    </div>
-  );
+    </Container>
+  )
 }
